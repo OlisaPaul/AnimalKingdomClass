@@ -15,9 +15,21 @@ const whale = new Mammal("whale");
 const snake = new Reptiles("snake");
 
 // calling the breathe method of the Amphibian
+// this method is inherited from the Base (Animal) class, but it returns a diferent result due to polymorphism
 console.log(frog.breathe());
-console.log(pigeon);
 
+// Compare the frog.breathe method with the titus.breathe method.
+// We will see that both returns different result, even though they were inherited from the same Class.
+console.log(titus.breathe());
+
+// the below example illustrates inheritance.
+// The eat method was created in the base class, and we can still access it in the descendant class
+console.log(pigeon.eat());
+
+// showing that properties can be inherited as well
+console.log(cockroach.bodyShape);
+console.log(whale.thermoregulation);
+console.log(snake.reproduce());
 // Test for abstraction, it will throw new error (uncomment line 22 to test);
 // const animal = new Animal("species");
 
