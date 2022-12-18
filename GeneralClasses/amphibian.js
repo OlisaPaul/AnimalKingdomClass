@@ -1,5 +1,6 @@
 const Vertebrate = require("../SecondaryClasses/vertebrate");
 
+// the extends keyword enables the Amphibia class to inherit from the  Vertebrate class
 module.exports = class Amphibia extends Vertebrate {
   constructor(species) {
     super();
